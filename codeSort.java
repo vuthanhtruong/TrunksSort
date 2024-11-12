@@ -1,20 +1,15 @@
 package code;
-
 import java.util.Random;
-
 public class codeSort {
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int[] M = new int[10];
 		Random rd=new Random();
 		for (int i = 0; i < M.length; i++) {
-		    M[i] = rd.nextInt(100)+1;
+		M[i] = rd.nextInt(100)+3;
 		}
 		for(int i=0;i<M.length;i++) {
-			int left=0;
-			int right=M.length-1;
-			Sort(M,left,right);
+		Sort(M,i,M.length-1);
 		}
 		for(int i=0;i<M.length;i++) {
 			System.out.print(M[i]+" ");
